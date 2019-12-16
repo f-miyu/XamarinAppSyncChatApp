@@ -1,0 +1,24 @@
+# this is an auto generated file. This will be overwritten
+query GetMessage($chatId: String!, $id: ID!) {
+  getMessage(chatId: $chatId, id: $id) {
+    id
+    chatId
+    text
+    userId
+  }
+}
+query ListMessages(
+  $filter: TableMessageFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listMessages(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      chatId
+      text
+      userId
+    }
+    nextToken
+  }
+}

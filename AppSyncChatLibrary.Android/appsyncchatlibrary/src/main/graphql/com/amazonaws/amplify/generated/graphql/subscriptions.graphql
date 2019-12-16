@@ -1,0 +1,25 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateMessage($chatId: String!) {
+  onCreateMessage(chatId: $chatId) {
+    id
+    chatId
+    text
+    userId
+  }
+}
+subscription OnUpdateMessage($chatId: String!) {
+  onUpdateMessage(chatId: $chatId) {
+    id
+    chatId
+    text
+    userId
+  }
+}
+subscription OnDeleteMessage($chatId: String!) {
+  onDeleteMessage(chatId: $chatId) {
+    id
+    chatId
+    text
+    userId
+  }
+}

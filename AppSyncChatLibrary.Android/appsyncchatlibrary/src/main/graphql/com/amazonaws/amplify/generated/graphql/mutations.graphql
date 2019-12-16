@@ -1,0 +1,25 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateMessage($input: CreateMessageInput!) {
+  createMessage(input: $input) {
+    id
+    chatId
+    text
+    userId
+  }
+}
+mutation UpdateMessage($input: UpdateMessageInput!) {
+  updateMessage(input: $input) {
+    id
+    chatId
+    text
+    userId
+  }
+}
+mutation DeleteMessage($input: DeleteMessageInput!) {
+  deleteMessage(input: $input) {
+    id
+    chatId
+    text
+    userId
+  }
+}
